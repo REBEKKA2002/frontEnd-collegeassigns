@@ -1,0 +1,83 @@
+
+.circle{
+    animation:spin linear 3s infinite;
+
+}
+@keyframes spin{
+    
+    0%{
+
+        transform:translateX(0px) rotate(0deg);
+        
+    
+    }
+    100%{
+        transform:translateX(250px)rotate(360deg);
+    }    
+    
+
+}        
+
+
+    
+    
+
+
+#head{
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 56px;
+
+}
+
+.head{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    
+}
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    height: 100vh;
+}
+
+
+.container{
+    
+    height:100px;
+    width: 100%;
+    background-color: black;
+    display:flex;
+    align-items: center; /*y axis*/
+    justify-content: space-evenly; /*x axis*/   
+
+
+}
+
+.box{
+    margin:20px;
+    width: 50%;
+    height: 50px;
+    border:2px solid gold;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.box:hover{
+    transform: scale(1,3) ;
+    background-color: fuchsia;
+}
+.box4{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    border:5px solid black;
+}
+
+

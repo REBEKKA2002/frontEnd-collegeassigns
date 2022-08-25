@@ -1,0 +1,91 @@
+*{
+    margin:o;
+    padding:0;box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;/*Xaxis*/
+    align-items: center; /* Yaxis */
+    background-color: rgb(240, 155, 51);
+}
+.container{
+    height:500px;
+    width:900px;
+    background-color: hsl(214deg, 10%, 14%);
+    border-radius: 12px;
+    box-shadow: 15px 15px 15px #aaaaaa;
+    overflow:hidden;
+}
+.nav{
+    height:70px;
+    display:flex;color:#aaaaaa;
+    width:100%;
+}
+.brand{
+    width:40%;
+    height: 100%;
+    color:#aaaaaa;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.brand img{
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid rgb(204, 183, 183);
+
+}
+.nav_opt{
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    color:#aaaaaa;
+    
+    display:flex;
+
+}
+.nav_opt ul{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.hero{
+    width: 100%;
+    background-color: azure;
+    height:430px;
+    display: flex;
+    
+}
+.about{
+    padding-top: 100px;
+    padding-left: 40px;
+    width:60%;
+    height: 100%;
+    background-color: hsl(214, 10%, 14%);
+    color: whitesmoke;
+}
+.profile_pic{
+    
+    width: 40%;
+    height: 100%;
+    background-color: hsl(214, 10%, 14%);
+
+}
+
+.profile_pic img{
+    float:right;
+    position:relative;
+    top:80px;
+    opacity: 0.9;
+}
+.box{
+    margin-left: 87px;
+    margin-top: 50px;
+    height: 240px;
+    width: 240px;
+    background-color: aquamarine;
+}
+

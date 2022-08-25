@@ -1,0 +1,110 @@
+/* fonts */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+/* variable decelarations */
+:root{
+    --primary:#e52165;
+    --primary-light:#e521668a;
+    --secondary:#0d1137;
+    --secondary-light:#0d1137ba;
+
+}
+
+::selection{
+    color:var(blanchedalmond);
+    background-color:var(--primary)
+}
+
+.fa-bars{
+    color:rgb(255,235,205);
+}
+
+
+/* Remove Browser styles */
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    width:100%;
+    height:100%;
+
+}
+header{
+    min-height:100vh;
+    background:linear-gradient(rgba(94, 85, 85, 0.041),rgb(46, 33, 33)),url(https://www.australiandesignreview.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-27-at-11.33.52-am-e1469583282589.png);
+    background-size:cover;
+    background-position:right;
+    position: relative;
+
+}
+
+    
+
+
+.header-content{
+    padding: 0 2rem;
+    background-color: rgb(30, 10, 56);
+    display: flex;
+    justify-content: space-between;
+    align-items:centre ;
+    height: relative;
+}
+.logo{
+     height:150px;
+}
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links a{
+    color:rgb(255,235,205);
+}
+
+.nav-links li::after{
+    content:'';
+    display: block;
+    color:var(--primary);
+    height:2px;
+    transform:scaleX(0);
+    transition:transform 300ms;
+}
+
+.nav-links li:hover::after{
+    transform:scaleX(1);
+}
+
+.burger {
+    display:none;
+    cursor:pointer;
+}
+@media  only screen and (max-width:600px)
+{
+    .nav-links{
+        /* display:none; */
+        position:absolute;
+        flex-direction:column;
+        background-color:var(--secondary-light);
+        right:0;
+        top:12vh;
+        height:40vh;
+        width:500%
+        padding 1.5rem 0;
+    }
+    .burger{
+        display:block;
+    }
+}
+    
